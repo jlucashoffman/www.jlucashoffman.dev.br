@@ -1,0 +1,12 @@
+:root {
+    /* variables */
+    --color-box-bg: oklch(1 0 0/ 0.05);
+    --color-page-bg: oklch(0 0 0);
+    --color-text-primary: oklch(0.7252 0 0);
+    --color-text-important: oklch(1 0 0);
+    --space-sm: 8px;
+    --space-md: 16px;
+
+    background-color: var(--color-page-bg);
+    color: var(--color-text-primary);
+}
