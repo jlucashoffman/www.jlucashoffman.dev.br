@@ -42,7 +42,7 @@
             border-radius: calc(var(--box-radius) + var(--border-weight));
             background-color: var(--color-box-bg);
             backdrop-filter: blur(60px);
-            z-index: -1;
+            z-index: 0;
             pointer-events: none;
         }
 
