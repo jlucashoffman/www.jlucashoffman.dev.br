@@ -29,5 +29,6 @@
         justify-content: center;
         align-items: center;
         aspect-ratio: 1;
+        color: var(--color-text-primary);
     }
 </style>
