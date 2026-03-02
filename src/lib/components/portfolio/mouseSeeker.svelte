@@ -43,5 +43,6 @@
         z-index: -1;
 		pointer-events: none;
         will-change: transform;
+        filter: blur(60px);
 	}
 </style>

@@ -6,7 +6,6 @@
 </script>
 
 <div class={[`box-pad-size-${pad}`, `box-rad-size-${rad}`, "box-container", className].join(" ")}>
-    <div class="box-backdrop"></div>
     <div class="box-content">
         {@render children?.()}
     </div>
@@ -36,28 +35,16 @@
 
         border-radius: calc(var(--box-radius) + var(--border-weight));
 
-        & .box-backdrop {
-            position: absolute;
-            inset: var(--border-weight);
-            border-radius: calc(var(--box-radius) + var(--border-weight));
-            background-color: var(--color-box-bg);
-            backdrop-filter: blur(60px);
-            z-index: 0;
-            pointer-events: none;
-        }
-
         & .box-content {
             display: flex;
             position: relative;
             padding: var(--box-padding);
+            inset: var(--border-weight);
             border-radius: calc(var(--box-radius) + var(--border-weight));
+            background-color: var(--color-box-bg);
 
             & :global(.box-area) {
                 width: 100%;
-            }
-
-            &:global(&:has(.box-content) .box-backdrop) {
-                backdrop-filter: none;
             }
         }
 
