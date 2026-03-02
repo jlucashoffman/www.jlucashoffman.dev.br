@@ -2,10 +2,10 @@
     import type { space_sizes } from "$lib";
     import type { Snippet } from "svelte";
 
-    let {children, pad="md", rad="md"}:{children: Snippet, pad?: space_sizes, rad?: space_sizes} = $props();
+    let {children, pad="md", rad="md", className}:{children: Snippet, pad?: space_sizes, rad?: space_sizes, className?:string} = $props();
 </script>
 
-<div class={[`box-pad-size-${pad}`, `box-rad-size-${rad}`, "box-container"].join(" ")}>
+<div class={[`box-pad-size-${pad}`, `box-rad-size-${rad}`, "box-container", className].join(" ")}>
     <div class="box-backdrop"></div>
     <div class="box-content">
         {@render children?.()}
