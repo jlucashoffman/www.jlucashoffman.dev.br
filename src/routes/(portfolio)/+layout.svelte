@@ -4,6 +4,7 @@
     import Header from '$lib/components/portfolio/layouts/header.svelte';
 	import "$lib/styles/reset.css";
 	import "$lib/styles/portfolio.css";
+    import MouseSeeker from '$lib/components/portfolio/mouseSeeker.svelte';
 
 	let { children } = $props();
 </script>
@@ -12,6 +13,8 @@
 	<link rel="icon" href={favicon} />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=favorite" />
 </svelte:head>
+
+<MouseSeeker />
 
 <Header />
 <main>{@render children()}</main>
