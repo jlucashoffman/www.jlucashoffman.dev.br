@@ -31,6 +31,7 @@
         --border-color: oklch(1 0 0);
 
         position: relative;
+        width: 100%;
 
         & .box-content {
             display: flex;

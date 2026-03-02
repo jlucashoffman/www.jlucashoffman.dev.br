@@ -44,6 +44,7 @@
         display: flex;
         flex-direction: column;
         gap: var(--space-md);
+        width: 100%;
 
         & .box-videos {
             display: flex;

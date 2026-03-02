@@ -16,3 +16,11 @@
 <Header />
 <main>{@render children()}</main>
 <Footer />
+
+<style>
+	main {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-md);
+	}
+</style>

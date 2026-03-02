@@ -3,10 +3,14 @@
 
 </script>
 <Box pad="sm" rad="sm">
-    <img src="assets/pic.webp" alt="Foto em perfil de João Lucas Hoffman com contraste de sombras em seu rosto.">
+    <img id="profile_pic-pic" src="assets/pic.webp" alt="Foto em perfil de João Lucas Hoffman com contraste de sombras em seu rosto.">
 </Box>
 
 <style>
+    :global(.box-container:has(#profile_pic-pic)) {
+        width: fit-content !important;
+    }
+
     img {
         aspect-ratio: 1;
         width: 64px;

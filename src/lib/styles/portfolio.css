@@ -27,6 +27,14 @@
     letter-spacing: 3%;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+    max-width: 1200px;
+    margin: var(--space-xl) auto;
+}
+
 h1, strong, h3 {
     color: var(--color-text-important);
     font-weight: bold;

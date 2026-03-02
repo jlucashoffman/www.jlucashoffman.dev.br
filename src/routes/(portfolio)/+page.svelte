@@ -10,11 +10,11 @@
 
 </script>
 <section id="personal_infos">
-    <div>
+    <div id="personal_infos_1">
         <BoxAbout />
         <BoxDegrees />
     </div>
-    <div>
+    <div id="personal_infos_2">
         <BoxLangs />
         <BoxSocial />
     </div>
@@ -29,3 +29,20 @@
     <BoxLastVideo />
     <BoxVideoHistory />
 </section>
+
+<style>
+
+    section, section > div {
+        gap: var(--space-md);
+    }
+
+    section > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        display: flex;
+        width: 100%;
+    }
+</style>
