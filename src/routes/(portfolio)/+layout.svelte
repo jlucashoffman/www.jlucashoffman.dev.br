@@ -5,6 +5,7 @@
 	import "$lib/styles/reset.css";
 	import "$lib/styles/portfolio.css";
     import MouseSeeker from '$lib/components/portfolio/mouseSeeker.svelte';
+    import PageMask from '$lib/components/portfolio/pageMask.svelte';
 
 	let { children } = $props();
 </script>
@@ -14,11 +15,12 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=favorite" />
 </svelte:head>
 
-<MouseSeeker />
-
 <Header />
 <main>{@render children()}</main>
 <Footer />
+
+<PageMask />
+<MouseSeeker />
 
 <style>
 	main {

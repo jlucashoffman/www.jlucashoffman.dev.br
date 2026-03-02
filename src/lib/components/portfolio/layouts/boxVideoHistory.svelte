@@ -12,11 +12,11 @@
             url: "http"
         },
         {
-            head: "Headline de vídeo",
+            head: "Headline de vídeo 2",
             url: "http"
         },
         {
-            head: "Headline de vídeo",
+            head: "Headline de vídeo 3",
             url: "http"
         }
     ]

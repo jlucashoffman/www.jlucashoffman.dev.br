@@ -34,6 +34,8 @@
         position: relative;
         width: 100%;
 
+        border-radius: calc(var(--box-radius) + var(--border-weight));
+
         & .box-backdrop {
             position: absolute;
             inset: var(--border-weight);
