@@ -24,7 +24,7 @@
 
 {#snippet videoCard(v: IVideo)}
     <a href={v.url} class="box-area">
-        <Box pad="lg" rad="sm">
+        <Box pad="lg" rad="sm" className="seeker_mask">
             <p>{v.head}</p>
         </Box>
     </a>

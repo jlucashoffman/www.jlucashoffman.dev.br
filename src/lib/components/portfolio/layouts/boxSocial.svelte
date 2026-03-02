@@ -36,7 +36,7 @@
 
 </script>
 
-<Box pad="lg">
+<Box pad="lg" className="seeker_mask">
     <div class="box-area">
         <h2>redes sociais</h2>
         <div class="box-social_medias">

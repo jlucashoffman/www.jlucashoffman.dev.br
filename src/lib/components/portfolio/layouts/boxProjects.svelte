@@ -43,7 +43,7 @@
     </Box>
 {/snippet}
 
-<Box pad="xl">
+<Box pad="xl" className="seeker_mask">
     <div class="box-area">
         <h2>projetos</h2>
         <div class="box-projects">

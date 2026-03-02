@@ -32,8 +32,8 @@
     </Box>
 {/snippet}
 
-<Box pad="xl">
-    <div class="box-area">
+<Box pad="xl" className="seeker_mask">
+    <div class="box-area ">
         <h2>blog</h2>
         <div class="box-posts">
             {#each posts as p}

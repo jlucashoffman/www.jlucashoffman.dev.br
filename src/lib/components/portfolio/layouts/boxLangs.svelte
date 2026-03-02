@@ -29,7 +29,7 @@
     </div>
     
 {/snippet}
-<Box pad="lg">
+<Box pad="lg" className="seeker_mask">
     <div class="box-area">
         <h2>línguas</h2>
         {#each languages as l}

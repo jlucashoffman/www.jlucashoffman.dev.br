@@ -3,7 +3,7 @@
     import BoxProfilePicture from "./boxProfilePicture.svelte";
 
 </script>
-<Box pad="xl">
+<Box pad="xl" className="seeker_mask">
     <div class="box-area">
         <div>
             <BoxProfilePicture />

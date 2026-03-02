@@ -29,7 +29,7 @@
     </div>    
 {/snippet}
 
-<Box pad="xl">
+<Box pad="xl" className="seeker_mask">
     <div class="box-area">
         <h2>graduações</h2>
         <div class="box-degrees">
