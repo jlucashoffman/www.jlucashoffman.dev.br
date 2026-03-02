@@ -23,11 +23,11 @@
 </script>
 
 {#snippet videoCard(v: IVideo)}
-    <Box pad="lg" rad="sm">
-        <a href={v.url} class="box-area">
-            {v.head}
-        </a>
-    </Box>
+    <a href={v.url} class="box-area">
+        <Box pad="lg" rad="sm">
+            <p>{v.head}</p>
+        </Box>
+    </a>
 {/snippet}
 
 <div class="box-history">
