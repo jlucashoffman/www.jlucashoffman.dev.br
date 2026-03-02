@@ -52,6 +52,7 @@
             background: var(--border-color);
             z-index: 1;
             mix-blend-mode: overlay;
+            pointer-events: none;
             
             -webkit-mask: 
                 linear-gradient(#fff 0 0) content-box, 
