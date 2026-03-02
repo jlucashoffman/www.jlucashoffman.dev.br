@@ -6,10 +6,11 @@
 </script>
 
 <div class={[`box-pad-size-${pad}`, `box-rad-size-${rad}`, "box-container"].join(" ")}>
-    <div class="box-border"></div>
+    <div class="box-backdrop"></div>
     <div class="box-content">
         {@render children?.()}
     </div>
+    <div class="box-border"></div>
 </div>
 
 <style>
@@ -33,15 +34,28 @@
         position: relative;
         width: 100%;
 
+        & .box-backdrop {
+            position: absolute;
+            inset: var(--border-weight);
+            border-radius: calc(var(--box-radius) + var(--border-weight));
+            background-color: var(--color-box-bg);
+            backdrop-filter: blur(60px);
+            z-index: -1;
+            pointer-events: none;
+        }
+
         & .box-content {
             display: flex;
-            background-color: var(--color-box-bg);
+            position: relative;
             padding: var(--box-padding);
             border-radius: calc(var(--box-radius) + var(--border-weight));
-            z-index: 0;
 
             & :global(.box-area) {
                 width: 100%;
+            }
+
+            &:global(&:has(.box-content) .box-backdrop) {
+                backdrop-filter: none;
             }
         }
 
@@ -50,7 +64,6 @@
             inset: var(--border-weight);
             border-radius: calc(var(--box-radius) + var(--border-weight));
             background: var(--border-color);
-            z-index: 1;
             mix-blend-mode: overlay;
             pointer-events: none;
             
@@ -66,4 +79,6 @@
             padding: var(--border-weight);
         }
     }
+
+    
 </style>
