@@ -24,7 +24,7 @@
     <circle
         bind:this={circle}
         r="175"
-        fill="#ffffff22"
+        fill="#ffffff44"
         class="seeker-circle"
     />
 </svg>
@@ -45,6 +45,6 @@
 
     .seeker-circle {
         will-change: cx, cy;
-        filter: blur(60px);
+        filter: blur(120px);
     }
 </style>
