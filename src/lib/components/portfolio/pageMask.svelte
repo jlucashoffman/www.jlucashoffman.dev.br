@@ -12,10 +12,19 @@
 
     onMount(() => {
         elements = Array.from(document.querySelectorAll<HTMLElement>(classMask));
-        masks = elements.map(el => ({
-            rect: el.getBoundingClientRect(),
-            radius: getComputedStyle(el).borderRadius
-        }));
+        masks = elements.map(el => {
+            const rect = el.getBoundingClientRect();
+
+            return {
+                rect: new DOMRect(
+                    rect.x + window.scrollX,
+                    rect.y + window.scrollY,
+                    rect.width,
+                    rect.height
+                ),
+                radius: getComputedStyle(el).borderRadius
+            };
+        });
     })
 </script>
 

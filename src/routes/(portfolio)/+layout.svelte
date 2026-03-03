@@ -19,7 +19,7 @@
 <main>{@render children()}</main>
 <Footer />
 
-<!-- <PageMask /> -->
+<PageMask />
 <MouseSeeker />
 
 <style>
