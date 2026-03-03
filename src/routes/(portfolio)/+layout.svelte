@@ -2,8 +2,6 @@
 	import favicon from '$lib/assets/favicon.svg';
     import Footer from '$lib/components/portfolio/layouts/footer.svelte';
     import Header from '$lib/components/portfolio/layouts/header.svelte';
-	import "$lib/styles/reset.css";
-	import "$lib/styles/portfolio.css";
     import MouseSeeker from '$lib/components/portfolio/mouseSeeker.svelte';
     import PageMask from '$lib/components/portfolio/pageMask.svelte';
 
@@ -12,6 +10,8 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<link rel="stylesheet" href="styles/portfolio.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=favorite" />
 </svelte:head>
 
