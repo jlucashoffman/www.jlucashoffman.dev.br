@@ -41,9 +41,13 @@
 <svg
     xmlns="http://www.w3.org/2000/svg"
     id="svg_mask">
-    {#each masks as m}
-        {@render rectangle(m.rect, m.radius)}
-    {/each}
+    <defs>
+        <mask id="svg_mask-image">
+            {#each masks as m}
+                {@render rectangle(m.rect, m.radius)}
+            {/each}
+        </mask>
+    </defs>
 </svg>
 
 <style>
