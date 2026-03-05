@@ -45,6 +45,13 @@
         align-items: center;
         gap: var(--space-lg);
 
+        @media screen and (max-width:900px) {
+            & h2 {
+                width: 100%;
+                text-align: left;
+            }
+        }
+
         & .box-posts {
             display: flex;
             flex-direction: column;

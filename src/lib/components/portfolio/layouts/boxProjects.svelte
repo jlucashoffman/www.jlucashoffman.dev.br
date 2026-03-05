@@ -48,6 +48,13 @@
         align-items: center;
         gap: var(--space-lg);
 
+        @media screen and (max-width:900px) {
+            & h2 {
+                width: 100%;
+                text-align: left;
+            }
+        }
+
         & .box-projects {
             display: grid;
             grid-template-columns: repeat(3, auto);

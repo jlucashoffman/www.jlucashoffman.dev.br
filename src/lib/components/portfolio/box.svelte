@@ -20,6 +20,10 @@
         &:is(.box-pad-size-lg) { --box-padding: var(--space-lg); }
         &:is(.box-pad-size-xl) { --box-padding: var(--space-xl); }
 
+        @media screen and (max-width:900px) {
+            --box-padding: var(--space-lg) !important;
+        }
+
         &:is(.box-rad-size-xs) { --box-radius: var(--space-xs); }
         &:is(.box-rad-size-sm) { --box-radius: var(--space-sm); }
         &:is(.box-rad-size-md) { --box-radius: var(--space-md); }
