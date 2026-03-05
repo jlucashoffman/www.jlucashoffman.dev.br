@@ -9,6 +9,11 @@
     import BoxVideoHistory from "$lib/components/portfolio/layouts/boxVideoHistory.svelte";
 
 </script>
+<svelte:head>
+    <title>J. Lucas Hoffman | Desenvolvedor Web</title>
+    <meta name="description" content="Meu nome é João Lucas Hoffman (@jlucashoffman) e atuo como desenvolvedor. Tenho como propósito ampliar meu impacto, criando soluções e compartilhando conhecimento que gerem transformação real na sociedade.">
+</svelte:head>
+
 <section id="personal_infos">
     <div id="personal_infos_1">
         <BoxAbout />
