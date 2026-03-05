@@ -21,7 +21,7 @@
         &:is(.box-pad-size-xl) { --box-padding: var(--space-xl); }
 
         @media screen and (max-width:900px) {
-            --box-padding: var(--space-lg) !important;
+            &:is(.box-pad-size-xl) { --box-padding: var(--space-lg); }
         }
 
         &:is(.box-rad-size-xs) { --box-radius: var(--space-xs); }
