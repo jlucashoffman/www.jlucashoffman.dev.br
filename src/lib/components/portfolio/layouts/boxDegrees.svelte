@@ -16,7 +16,7 @@
         {
             course: "Tecnólogo em Segurança Cibernética",
             university: "UNICESUMAR",
-            year: 2026
+            year: 2027
         }
     ]
 

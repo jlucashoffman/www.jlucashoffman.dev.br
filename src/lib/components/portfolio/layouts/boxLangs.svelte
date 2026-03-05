@@ -13,7 +13,7 @@
         },
         {
             lang: "Inglês",
-            level: "C1"
+            level: "B2"
         }
     ]
 
