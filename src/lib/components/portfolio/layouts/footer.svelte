@@ -19,6 +19,8 @@
         display: flex;
         flex-direction: column;
         gap: var(--space-lg);
+        padding-left: var(--space-lg);
+		padding-right: var(--space-lg);
 
         & .link-groups {
             display: flex;

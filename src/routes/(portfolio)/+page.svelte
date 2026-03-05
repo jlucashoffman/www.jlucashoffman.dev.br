@@ -45,4 +45,16 @@
         display: flex;
         width: 100%;
     }
+
+    @media screen and (max-width:1024px) {
+        #personal_infos > div {
+            flex: 1;
+        }
+    }
+
+    @media screen and (max-width:900px) {
+        #personal_infos, #media {
+            flex-direction: column;
+        }
+    }
 </style>

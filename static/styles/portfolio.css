@@ -38,6 +38,9 @@ body {
     max-width: 1200px;
     height: 100%;
     margin: var(--space-xl) auto;
+    overscroll-behavior-x: none;
+    overflow-x: hidden;
+    touch-action: pan-y;
 }
 
 h1, strong, h3 {

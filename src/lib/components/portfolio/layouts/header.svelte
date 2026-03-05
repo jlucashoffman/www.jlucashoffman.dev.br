@@ -9,5 +9,7 @@
 		display: flex;
 		align-items: center;
 		gap: var(--space-sm);
+		padding-left: var(--space-lg);
+		padding-right: var(--space-lg);
 	}
 </style>

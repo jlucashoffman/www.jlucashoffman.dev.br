@@ -54,6 +54,14 @@
             gap: var(--space-md);
             width: 100%;
 
+            @media screen and (max-width:1024px) {
+                grid-template-columns: repeat(2, auto);
+            }
+
+            @media screen and (max-width:750px) {
+                grid-template-columns: repeat(1, auto);
+            }
+
             & .box-project {
                 display: flex;
                 justify-content: space-between;
