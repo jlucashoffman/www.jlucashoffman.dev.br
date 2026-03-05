@@ -12,7 +12,7 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 	<link rel="stylesheet" href="styles/portfolio.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=favorite" />
 
 	<meta name="theme-color" content="#000000">
