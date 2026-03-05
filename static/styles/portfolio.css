@@ -22,6 +22,7 @@
     @media (max-width: 900px) {
         --space-lg: 24px;
         --space-xl: 32px;
+        font-size: 12px;
     }
 
     background-color: var(--color-page-bg);
