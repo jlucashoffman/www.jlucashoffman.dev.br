@@ -9,6 +9,7 @@
 <style>
     :global(.box-container:has(#profile_pic-pic)) {
         width: fit-content !important;
+        height: fit-content;
     }
 
     img {
