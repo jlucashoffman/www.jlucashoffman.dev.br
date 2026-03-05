@@ -1,13 +1,17 @@
-<script>
+<script lang="ts">
     import Box from "../box.svelte";
 
+    const videoUrl = ""
 </script>
 <Box rad="xs">
-    <video src=""></video>
+    {#if videoUrl != ""}
+        <iframe src={videoUrl} title="Meu último vídeo publicado" frameborder="0"></iframe>
+    {/if}
+    
 </Box>
 
 <style>
-    video {
+    iframe {
         aspect-ratio: 16/9;
     }
 </style>
