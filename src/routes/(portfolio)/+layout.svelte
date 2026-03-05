@@ -4,6 +4,7 @@
     import Header from '$lib/components/portfolio/layouts/header.svelte';
     import MouseSeeker from '$lib/components/portfolio/mouseSeeker.svelte';
     import PageMask from '$lib/components/portfolio/pageMask.svelte';
+    import { deviceState } from '$lib/detectDevice.svelte';
 
 	let { children } = $props();
 </script>
@@ -19,8 +20,10 @@
 <main>{@render children()}</main>
 <Footer />
 
+{#if !deviceState.isTouch}
 <PageMask />
 <MouseSeeker />
+{/if}
 
 <style>
 	main {
