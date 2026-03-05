@@ -69,6 +69,10 @@
                 height: 100%;
                 background-color: var(--color-text-important);
                 mix-blend-mode: overlay;
+
+                @media screen and (max-width:900px) {
+                    left: calc(var(--space-sm) * -1 - var(--space-sm) / 2);
+                }
             }
         }
 
@@ -93,6 +97,11 @@
                     width: var(--space-sm);
                     background-color: var(--color-text-important);
                     box-shadow: 0px 0px 10px 1px var(--color-text-important);
+
+                    @media screen and (max-width:900px) {
+                        width: var(--space-xs);
+                        left: calc(var(--space-sm) * -1.25);
+                    }
                 }
             }
 
