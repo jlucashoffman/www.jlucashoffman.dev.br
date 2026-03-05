@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Inter';
-    src: url('/fonts/inter.ttf') format('truetype');
+    src: url('/fonts/subset-Inter-Regular.woff2') format('woff2'),
+        url('/fonts/subset-Inter-Regular.woff') format('woff');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
