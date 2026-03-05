@@ -7,32 +7,7 @@
         url: string
     }
 
-    const social_medias: ISocial[] = [
-        {
-            icon: "instagram",
-            url: ""
-        },
-        {
-            icon: "instagram",
-            url: ""
-        },
-        {
-            icon: "instagram",
-            url: ""
-        },
-        {
-            icon: "instagram",
-            url: ""
-        },
-        {
-            icon: "instagram",
-            url: ""
-        },
-        {
-            icon: "instagram",
-            url: ""
-        }
-    ]
+    const social_medias: ISocial[] = []
 
 </script>
 
@@ -40,9 +15,14 @@
     <div class="box-area">
         <h2>redes sociais</h2>
         <div class="box-social_medias">
-        {#each social_medias as sm}
-            <BoxLinkButton icon={sm.icon} url={sm.url} />
-        {/each}
+        
+        {#if social_medias.length > 0}
+            {#each social_medias as sm}
+                <BoxLinkButton icon={sm.icon} url={sm.url} />
+            {/each}
+        {:else}
+            <em>Nada ainda!</em>
+        {/if}
         </div>
     </div>
 </Box>

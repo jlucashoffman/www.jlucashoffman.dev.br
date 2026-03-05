@@ -6,28 +6,7 @@
         stars: number
     }
 
-    const projects: IProject[] = [
-        {
-            name: "projeto",
-            stars: 100
-        },
-        {
-            name: "projeto 2",
-            stars: 100
-        },
-        {
-            name: "projeto 3",
-            stars: 100
-        },
-        {
-            name: "projeto 4",
-            stars: 100
-        },
-        {
-            name: "projeto 5",
-            stars: 100
-        }
-    ]
+    const projects: IProject[] = []
 
 </script>
 
@@ -47,11 +26,18 @@
     <div class="box-area">
         <h2>projetos</h2>
         <div class="box-projects">
-            {#each projects as p}
-                {@render project(p)}
-            {/each}
+            
+            {#if projects.length > 0}
+                {#each projects as p}
+                    {@render project(p)}
+                {/each}
+            {:else}
+                <em>Nada ainda!</em>
+            {/if}
         </div>
-        <a href="">Clique aqui para ver mais projetos</a>
+        {#if projects.length > 0}
+            <a href="">Clique aqui para ver mais projetos</a>
+        {/if}
     </div>
 </Box>
 

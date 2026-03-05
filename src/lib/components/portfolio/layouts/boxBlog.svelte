@@ -6,20 +6,7 @@
         date: string
     }
 
-    const posts: IBlog[] = [
-        {
-            name: "headline de publicação",
-            date: "15/12/2026"
-        },
-        {
-            name: "headline de publicação",
-            date: "15/12/2026"
-        },
-        {
-            name: "headline de publicação",
-            date: "15/12/2026"
-        }
-    ]
+    const posts: IBlog[] = []
 
 </script>
 
@@ -36,11 +23,18 @@
     <div class="box-area ">
         <h2>blog</h2>
         <div class="box-posts">
+        {#if posts.length > 0}
             {#each posts as p}
                 {@render post(p)}
             {/each}
+        {:else}
+            <em>Nada ainda!</em>
+        {/if}
+            
         </div>
-        <a href="">Clique aqui para ver mais publicações no blog</a>
+        {#if posts.length > 0}
+            <a href="">Clique aqui para ver mais publicações no blog</a>
+        {/if}
     </div>
 </Box>
 

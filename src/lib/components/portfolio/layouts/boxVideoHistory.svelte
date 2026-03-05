@@ -6,20 +6,7 @@
         url: string
     }
 
-    const videos: IVideo[] = [
-        {
-            head: "Headline de vídeo",
-            url: "http"
-        },
-        {
-            head: "Headline de vídeo 2",
-            url: "http"
-        },
-        {
-            head: "Headline de vídeo 3",
-            url: "http"
-        }
-    ]
+    const videos: IVideo[] = []
 </script>
 
 {#snippet videoCard(v: IVideo)}
@@ -33,9 +20,14 @@
 <div class="box-history">
     <h2>últimos vídeos</h2>
     <div class="box-videos">
-        {#each videos as v}
-            {@render videoCard(v)}
-        {/each}
+        {#if videos.length > 0}
+            {#each videos as v}
+                {@render videoCard(v)}
+            {/each}
+        {:else}
+            <em>Nada ainda!</em>
+        {/if}
+        
     </div>
 </div>
 

@@ -32,9 +32,14 @@
 <Box pad="lg" className="seeker_mask">
     <div class="box-area">
         <h2>línguas</h2>
-        {#each languages as l}
+        
+        {#if languages.length > 0}
+            {#each languages as l}
             {@render lang(l)}
         {/each}
+        {:else}
+            <em>Nada ainda!</em>
+        {/if}
     </div>
 </Box>
 

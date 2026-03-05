@@ -33,9 +33,14 @@
     <div class="box-area">
         <h2>graduações</h2>
         <div class="box-degrees">
+        {#if degrees.length > 0}
             {#each degrees as deg}
                 {@render degree(deg)}
             {/each}
+        {:else}
+            <em>Nada ainda!</em>
+        {/if}
+            
         </div>
     </div>
 </Box>
