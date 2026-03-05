@@ -12,7 +12,8 @@
                 <p><strong>Belo Horizonte</strong>, MG, Brasil</p>
             </div>
         </div>
-        <p>Me chamo <strong>João Lucas Hoffman</strong> (@jlucashoffman) e, pasmem, sou um desenvolvedor! Meu objetivo é alcançar o mundo, criando e ensinando para a sociedade. Acredito que já temos poder computacional o suficiente para acabar com toda mazela social que impregna a sociedade, desde a acessibilidade até a segurança.</p>
+        <p>Meu nome é <strong>João Lucas Hoffman</strong> (@jlucashoffman) e atuo como desenvolvedor. Tenho como propósito ampliar meu impacto, criando soluções e compartilhando conhecimento que gerem transformação real na sociedade.<br><br>
+            Acredito que já dispomos de poder computacional suficiente para enfrentar grande parte dos desafios sociais que ainda nos cercam — da acessibilidade à segurança. O que falta não é tecnologia, mas direcionamento, colaboração e iniciativa para aplicá-la de forma estratégica e responsável.</p>
     </div>
 </Box>
 
