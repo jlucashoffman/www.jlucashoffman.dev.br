@@ -1,10 +1,7 @@
 <script lang="ts">
+	import "$lib/styles/reset.css"
 
 	let { children } = $props();
 </script>
-
-<svelte:head>
-	<link rel="stylesheet" href="styles/reset.css">
-</svelte:head>
 
 {@render children()}
