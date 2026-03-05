@@ -26,6 +26,11 @@
             display: flex;
             gap: var(--space-xl);
 
+            @media screen and (max-width: 900px) {
+                flex-direction: column;
+                gap: var(--space-md);
+            }
+
             & .link-group {
                 display: flex;
                 flex-direction: column;
